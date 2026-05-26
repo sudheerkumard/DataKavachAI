@@ -1,2 +1,7 @@
-# Add your project dependencies here (e.g., flask, requests)
-# If your project uses standard libraries only, you can leave this empty
+flask
+gunicorn
+celery
+redis
+python-nmap
+requests
+pyyaml

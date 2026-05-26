@@ -1,0 +1,9 @@
+import nmap
+
+class ScannerEngine:
+    def __init__(self):
+        self.nm = nmap.PortScanner()
+
+    def run_scan(self, target):
+        # Enterprise tools use service fingerprinting and aggressive timing
+        return self.nm.scan(target, arguments='-sV -sS -O')
